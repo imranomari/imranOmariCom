@@ -1,0 +1,135 @@
+// Config file for univer.css
+// @see https://github.com/imranomari/univercss
+
+
+
+// // Default direction [rtl|ltr]
+// $uni-dir: 'ltr';
+
+// $uni-globalBorderBox: true;
+
+// // Default Sizing unit [1px|1em|1rem]
+// $uni-sizeUnit: 1px;//px OR em
+
+// // Include html classes for rhythm grid system
+// // (eg: .GridZone .GridCell .spans-12 .stones-6-on-palm)
+// $uni-outputHtmlClasses: false;
+// $uni-outputModulesClasses: $uni-outputHtmlClasses;
+// $uni-outputUtilitiesClasses: $uni-outputHtmlClasses;
+
+// // Direction Configuration
+// $uni-dirStart: left;
+// $uni-dirEnd: right;
+
+// @if ($uni-dir == 'rtl') {
+//   $uni-dirStart: right;
+//   $uni-dirEnd: left;
+// }
+
+// $uni-dirDefault: $uni-dirStart;
+// $uni-dirOppos: $uni-dirEnd;
+
+
+// // ===================================================================
+// // Rhythm & Grid varibales
+// // ===================================================================
+// // Default number of columns in a row [12|24|{INT}]
+// $uni-columns: 12;
+
+
+// // Default Rhythm Unit (fixed gutters, fixed Columns and vertical spacing are based on this unit)
+// $uni-gridUnit: 7 * $uni-sizeUnit;//px OR em
+// $uni-rhythmUnit: 7 * $uni-sizeUnit;//px OR em
+
+// // Default Grid Gutter size
+// $uni-gutter: 1;//rhythm-unit
+
+// // Default Vertical Spacing
+// $uni-line: 3;//rhythm-unit
+
+// // Default Column size
+$uni-column: 15;//rhythm-unit
+
+// // Default Base Font size [{NUM}px] to define root font size,
+// // line-heights, em and rem sizing based on this value mainly
+// $uni-baseFontSize: 2 * $uni-rhythmUnit;//px
+
+// $uni-lineHeight: $uni-rhythmUnit * $uni-line;
+
+
+
+// // Horizontal Spacing method (Gutters) can be [padding|margin|margin-odd|isolate].
+// // # margin
+// // |---s01---||---s02---||---s03---||---s04---||---s05---||---s06---|
+// // |g||------c01-----||g||g||------c02-----||g||g||------c03-----||g|
+// // # margin-odd
+// // |---s01---||---s02---||---s03---||---s04---||---s05---||---s06---||g| // 1 extra gutter
+// // |g||------c01--------||g||------c02--------||g||------c03--------||g|
+// // # padding & Isolate
+// // |---s01---||---s02---||---s03---||---s04---||---s05---||---s06---|
+// // ||g|------c01-----|g||||g|------c02-----|g||||g|------c03-----|g||
+// $uni-spacingMethod: 'isolate';
+
+// // Column Type can be [float|inline].
+// $uni-flowMethod: 'float';
+
+
+
+// // Column Type can be [fluid|fixed].
+// $uni-columnType: 'fluid';
+
+// // Wrapper min-width can be [false|{INT}{cssUnit}].
+// $uni-minWidth:   (3 *  $uni-column * $uni-gridUnit);
+
+
+$uni-breakpoints: (
+  'small' '(max-width: 756px)',
+  'wide' '(min-width: 757px)'
+);
+
+
+// $uni-responsive: true;
+
+
+// // ===================================================================
+// // Heading varibales
+// // ===================================================================
+// // Default heading sizes from h1 to h6 [{INT}px]
+// $uni-headingSizes:
+//    48px,
+//    36px,
+//    30px,
+//    24px,
+//    20px,
+//    18px;
+
+// // Default heading classes from h1 to h6 [{STR}]
+// $uni-headingClasses:
+//   alpha,
+//   beta,
+//   gamma,
+//   delta,
+//   epsilon,
+//   zeta;
+
+
+
+// // All output*Classes varibales
+// $uni-outputUtilitiesClasses-Rhythm: $uni-outputUtilitiesClasses !default;
+// $uni-outputUtilitiesClasses-Spaces: $uni-outputUtilitiesClasses !default;
+// $uni-outputUtilitiesClasses-Flow: $uni-outputUtilitiesClasses !default;
+// $uni-outputUtilitiesClasses-Visibility: $uni-outputUtilitiesClasses !default;
+// $uni-outputUtilitiesClasses-Lists: $uni-outputUtilitiesClasses !default;
+// $uni-outputUtilitiesClasses-Prototype: $uni-outputUtilitiesClasses !default;
+
+
+// $uni-outputModulesClasses-Button: $uni-outputModulesClasses !default;
+// $uni-outputModulesClasses-Grid: $uni-outputModulesClasses !default;
+// $uni-outputModulesClasses-Media: $uni-outputModulesClasses !default;
+// $uni-outputModulesClasses-Navigation: $uni-outputModulesClasses !default;
+// $uni-outputModulesClasses-Heading: $uni-outputModulesClasses !default;
+
+
+
+// you did all the config, good, now call me
+@import "../../../univercss/main";

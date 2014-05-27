@@ -1,0 +1,19 @@
+.section--contact {
+  a {
+    color: $prj-color--green;
+    &:hover {
+      color: #fff;
+    }
+  }
+  text-align: center;
+}
+
+.contact_copy,
+.contact_info {
+  @extend %u-span12;
+  @extend %wide-u-span6;
+
+  @extend %u-paddingHS;
+  @extend %GColumn;
+  @extend %GColumn--center;
+}

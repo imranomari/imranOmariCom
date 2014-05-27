@@ -1,0 +1,42 @@
+.services__widgets {
+  @extend %u-paddingVM;
+  .widget {
+    @extend %u-span12;
+    @extend %wide-u-span4;
+  }
+}
+
+
+.service--design {
+  .widget__title {
+    color: $prj-color--green-sea;
+  }
+  .button {
+    background: $prj-color--green-sea;
+    border-color: $prj-color--green-sea;
+    &:hover,
+    &:focus {
+      color: $prj-color--green-sea;
+      background: none;
+    }
+  }
+}
+.service--frontend {
+  .widget__title {
+    color: $prj-color--blue;
+  }
+}
+.service--backend {
+  .widget__title {
+    color: $prj-color--purple;
+  }
+  .button {
+    background: $prj-color--purple;
+    border-color: $prj-color--purple;
+    &:hover,
+    &:focus {
+      color: $prj-color--purple;
+      background: none;
+    }
+  }
+}

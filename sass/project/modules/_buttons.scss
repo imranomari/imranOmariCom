@@ -1,0 +1,40 @@
+.button {
+  @extend %Button;
+  border: 2px solid;
+  font-weight: 600;
+  border-radius: 70px;
+}
+
+.button--simple {
+  border-width: 0;
+  border-radius: 0;
+}
+.button--large {
+  @include u-fontSize($uni-baseFontSize * 1.2);
+}
+@include u-mediaQuery('wide') {
+  .button--large {
+    border-width: 3px;
+    @include u-fontSize($uni-baseFontSize * 2);
+  }
+}
+
+
+.button--secondary {
+  color: $prj-color--gray-medium;
+  &:hover,
+  &:focus {
+    color: $prj-color--gray-darker;
+  }
+}
+
+.button--rev {
+  color: #fff;
+  background: $prj-color--blue;
+  border-color: $prj-color--blue;
+  &:hover,
+  &:focus {
+    background: none;
+    color: $prj-color--blue;
+  }
+}

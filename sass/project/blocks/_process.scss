@@ -1,0 +1,33 @@
+.section--process {
+  // background: $prj-color--gray-light;
+}
+
+.process__widgets {
+  @extend %u-paddingVM;
+  .widget {
+    @extend %u-span12;
+    @extend %wide-u-span6;
+  }
+}
+
+
+.phase--plan {
+  .widget__title {
+    color: $prj-color--ruby;
+  }
+}
+.phase--design {
+  .widget__title {
+    color: $prj-color--green-sea;
+  }
+}
+.phase--code {
+  .widget__title {
+    color: $prj-color--blue;
+  }
+}
+.phase--deliver {
+  .widget__title {
+    color: $prj-color--purple;
+  }
+}

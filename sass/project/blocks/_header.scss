@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  a {
+    color: $prj-color--gray-dark;
+    &:hover {
+      color: $prj-color--blue;
+    }
+  }
+  @extend %u-paddingVM;
+  background: #fff;
+  border-bottom: 1px solid $prj-color--gray-light;
+  @include box-shadow(#fff 0 0 10px);
+
+}
+
+.header_main {
+  @extend %u-span12;
+  @extend %wide-u-span6;
+
+  @extend %u-alignCenter;
+  @extend %wide-u-align;
+
+  @extend %u-paddingHS;
+}
+.header_nav {
+  @extend %small-u-span12;
+  @extend %wide-u-floatOppos;
+
+  @extend %u-alignCenter;
+
+  @extend %u-paddingHS;
+  @extend %u-paddingTT;
+}
+.page-title {
+  @extend %H--h4;
+  line-height: 1.56;
+  margin: 0;
+}
+
+.logo {
+
+}
+
+.logo__img {
+  @include u-display(inline-block);
+  border: 2px solid;
+  padding: 0 .35em;
+  border-radius: 6px;
+}
+
+// .logo__shape {
+//   background: $prj-color--gray-dark;
+//   .logo:hover & {
+//     background: $prj-color--gray-dark;
+//   }
+// }
+// @import "logo";
+
+.logo__text {
+
+}
+
+.navigation_nav {
+  @extend %u-list__linksSizeS;
+  text-transform: uppercase;
+}

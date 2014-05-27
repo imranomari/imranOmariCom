@@ -1,0 +1,22 @@
+// LAYOUT
+.wrapper {
+  @extend %GWrapper;
+}
+.container {
+  @extend %GContainer;
+}
+.zone {
+  @extend %GZone;
+}
+.column {
+  @extend %GColumn;
+}
+.cell {
+  @extend %GCell;
+}
+.column--oppos {
+  @extend %GColumn--oppos;
+}
+.column--center {
+  @extend %GColumn--center;
+}

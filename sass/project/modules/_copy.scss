@@ -1,0 +1,17 @@
+.copy {
+  @include u-fontSize(16px);
+  line-height: 1.65;
+}
+
+.copy--hero {
+  @include u-fontSize(24px);
+  line-height: 1.5;
+  font-weight: 300;
+}
+@include u-mediaQuery('wide') {
+  .copy--hero {
+    @include u-fontSize(32px);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
