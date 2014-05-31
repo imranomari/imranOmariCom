@@ -6,11 +6,23 @@
 .copy--hero {
   @include u-fontSize(24px);
   line-height: 1.5;
+  font-weight: 400;
+}
+.copy--medium {
+  @include u-fontSize(21px);
+  line-height: 1.5;
   font-weight: 300;
 }
+
+
 @include u-mediaQuery('wide') {
   .copy--hero {
     @include u-fontSize(32px);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .copy--medium {
+    @include u-fontSize(28px);
     line-height: 1.5;
     font-weight: 300;
   }
