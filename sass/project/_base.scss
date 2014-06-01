@@ -3,7 +3,11 @@
 }
 
 html {
-  font: 400 14px "Open Sans", sans-serif;
+  @if ($uni-dir == 'ltr') {
+    font: 400 14px "Open Sans", sans-serif;
+  } @else {
+    font: 400 14px "Droid Arabic Kufi", sans-serif;
+  }
   color: $prj-color--gray-dark;
 }
 

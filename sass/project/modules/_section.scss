@@ -34,7 +34,7 @@
   @extend %wide-u-span3;
 
   height: 1px;
-  margin: 0 auto;
+  margin: 0 auto 14px;
   color: $prj-color--gray-silver;
   background: $prj-color--gray-silver;
 }
@@ -57,13 +57,14 @@
   background: #fff;
   position: relative;
   &:before {
+    line-height: 1px;
     width: 100%;
     position: absolute;
     text-align: center;
     content: "*";
     font-size: 3em;
     font-weight: 600;
-    top: -.55em;
+    top: 0.2em;
     left: 0;
   }
 }
